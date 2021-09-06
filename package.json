@@ -9,7 +9,6 @@
     "availity-reactstrap-validation": "^2.7.1",
     "axios": "^0.21.3",
     "bootstrap": "^4.6.0",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
@@ -18,6 +17,7 @@
     "reactstrap": "^8.10.0",
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
+    "sass-loader": "^12.1.0",
     "toastify": "^2.0.1",
     "web-vitals": "^1.0.1"
   },
@@ -44,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.39.0"
   }
 }
