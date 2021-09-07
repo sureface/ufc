@@ -1,23 +1,22 @@
-.homePage{
-  .navPage{
+.homePage {
+  .navPage {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
 
-    .navigation{
+    .navigation {
       padding: 10px 50px;
       background: rgba(255, 255, 255, 0.05);
-      border-radius: 6px;
       overflow: hidden;
       backdrop-filter: blur(10px);
 
 
-      .logo{
+      .logo {
         width: 130px;
       }
 
-      .nav-item{
+      .nav-item {
         .nav-link {
           padding: 15px 20px;
           font-size: 30px;
@@ -28,31 +27,34 @@
           text-shadow: 1px 1px 3px #CAC2C4;
         }
       }
-      .btn{
+
+      .btn {
         margin-left: 50px;
       }
 
     }
-    .navigation.active{
+
+    .navigation.active {
       background: red;
     }
   }
 
-  .carouselSlick{
+  .carouselSlick {
     position: relative;
 
     //its for remove next and prev buttons !!
     .slick-arrow {
       display: none !important;
     }
-    .slideBlock{
+
+    .slideBlock {
       width: 100%;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      .textStyle{
+      .textStyle {
         font-size: 50px;
         font-weight: 800;
         color: #FFffff;
@@ -60,7 +62,7 @@
         margin-bottom: 20px;
       }
 
-      .card-glass{
+      .card-glass {
         height: 200px;
         width: 30%;
         background: rgba(255, 255, 255, 0.05);
@@ -72,6 +74,7 @@
         justify-content: center;
         flex-direction: column;
       }
+
       .pple1 {
         background: url("../images/magregor.jpg");
         background-repeat: no-repeat;
@@ -83,7 +86,8 @@
         flex-direction: column;
 
       }
-      .pple2{
+
+      .pple2 {
         background: url("../images/habib.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -93,7 +97,8 @@
         justify-content: flex-end;
         flex-direction: column;
       }
-      .pple3{
+
+      .pple3 {
         background: url("../images/habibVsConer.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -103,7 +108,8 @@
         justify-content: flex-end;
         flex-direction: column;
       }
-      .pple4{
+
+      .pple4 {
         background: url("../images/alexander.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -117,14 +123,52 @@
   }
 }
 
-.showCase{
-  background: rgba(0,0,0, 0.7) url("../images/bgShowCase.jpg");
+.showCase {
+  background: rgba(0, 0, 0, 0.7) url("../images/bgShowCase.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: darken;
   height: 100vh;
-  .container-fluid{
 
+  .container{
+    //background: lightblue;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cardX {
+      min-height: 80vh;
+      width: 35rem;
+      margin-top: 50px;
+      background: lightcoral;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+      border-radius: 30px;
+      padding: 0 5rem;
+      .ppleufc {
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: lightblue;
+
+        .sircle {
+          width: 15rem;
+          height: 15rem;
+          background: linear-gradient(
+           to right,
+          rgba(245, 70, 66, 0.75),
+          rgba(8,83,156,0.75)
+          );
+          position: absolute;
+          border-radius: 50%;
+          z-index: 1;
+        }
+        img {
+          width: 50%;
+          z-index: 2;
+        }
+      }
+    }
   }
 }
