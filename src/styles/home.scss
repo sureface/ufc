@@ -1,3 +1,130 @@
-Navbar{
+.homePage{
+  .navPage{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 
+    .navigation{
+      padding: 10px 50px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+
+
+      .logo{
+        width: 130px;
+      }
+
+      .nav-item{
+        .nav-link {
+          padding: 15px 20px;
+          font-size: 30px;
+          font-weight: 700;
+          font-family: sans-serif;
+          color: #C73138;
+          font-style: italic;
+          text-shadow: 1px 1px 3px #CAC2C4;
+        }
+      }
+      .btn{
+        margin-left: 50px;
+      }
+
+    }
+    .navigation.active{
+      background: red;
+    }
+  }
+
+  .carouselSlick{
+    position: relative;
+
+    //its for remove next and prev buttons !!
+    .slick-arrow {
+      display: none !important;
+    }
+    .slideBlock{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .textStyle{
+        font-size: 50px;
+        font-weight: 800;
+        color: #FFffff;
+        text-shadow: 2px 2px 5px #e8e6e6;
+        margin-bottom: 20px;
+      }
+
+      .card-glass{
+        height: 200px;
+        width: 30%;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .pple1 {
+        background: url("../images/magregor.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+
+      }
+      .pple2{
+        background: url("../images/habib.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+      .pple3{
+        background: url("../images/habibVsConer.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+      .pple4{
+        background: url("../images/alexander.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.showCase{
+  background: rgba(0,0,0, 0.7) url("../images/bgShowCase.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  height: 100vh;
+  .container-fluid{
+
+  }
 }

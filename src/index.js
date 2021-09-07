@@ -4,8 +4,10 @@ import App from './App';
 import {createStore} from "redux";
 import {Provider} from "react-redux";
 import {rootReducer} from "./redux/reducers/rootReducer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './global.scss'
+
 
 const store = createStore(rootReducer);
 
