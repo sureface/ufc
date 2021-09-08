@@ -11,8 +11,8 @@ export default class SimpleSlider extends Component {
             speed: 1000,
 
             //=== its for auto Play carousel ===
-            // autoplaySpeed: 2000,
-            // cssEase: "linear"
+            autoplaySpeed: 2000,
+            cssEase: "linear"
 
             // === its for vertical carousel ===
             // vertical: true,

@@ -16,7 +16,7 @@ import '../styles/home.scss'
      const [changeNav, setChangeNav] = useState(false);
      const [isOpen, setIsOpen] = useState(false);
 
-     const [audio] = useState(new Audio('https://cdn1.sefon.pro/prev/Rv5XIkIIJlKyiYhKa2fZzg/1631125516/175/NEFFEX%20-%20Never%20Give%20Up%20%28192kbps%29.mp3'));
+     const [audio] = useState(new Audio('https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3'));
      const [playing, setPlaying] = useState(true);
 
      //https://mp3hub.best/download/vic-sage-feat-mike-stud-college.mp3
@@ -28,6 +28,7 @@ import '../styles/home.scss'
 
      useEffect(() => {
          playing ? audio.play() : audio.pause();
+         audio.addEventListener('ended', () => audio.play());
 
      }, [playing]);
 
