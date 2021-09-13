@@ -169,6 +169,25 @@
           z-index: 2;
         }
       }
+      .text-1x2{
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        color: #585858;
+        font-weight: lighter;
+      }
+      button {
+        width: 100%;
+        padding: 1rem 0;
+        background: #f54642;
+        border: none;
+        color: #FFffff;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: bolder;
+      }
     }
   }
 }

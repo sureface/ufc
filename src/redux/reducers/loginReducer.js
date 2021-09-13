@@ -1,7 +1,8 @@
 
 
 const  initialState = {
-    isLoading: false
+    isLoading: false,
+    openModal: false
 }
 
 export const loginReducer = (state = initialState, action) => {

@@ -10,6 +10,7 @@ import {
 } from 'reactstrap';
 import Logo from "../images/logo.png"
 import '../styles/home.scss'
+import {Link} from "react-router-dom";
 
  const NavigationBar = (props) => {
 
@@ -76,7 +77,7 @@ import '../styles/home.scss'
                              <NavLink className="nav-link" href="#">fast</NavLink>
                          </NavItem>
                      </Nav>
-                     <button type="button" className="btn btn-warning">Sign in</button>
+                     <button type="button" className="btn btn-warning"><Link to="Login">Sign in</Link></button>
                      <button type="button" className="btn btn-danger" onClick={startPlay}>music</button>
                  </Collapse>
              </Navbar>
