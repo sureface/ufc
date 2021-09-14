@@ -11,7 +11,7 @@ const Login = (props) => {
                 <div className="col-4">
                     <div className="card">
                         <div className="card-body">
-                            <AvForm onSubmit={props.login}>
+                            <AvForm onSubmit={(event, error, value) => props.login(event, error, value, props.history )}>
                                 <AvField
                                     type="text"
                                     name="phoneNumber"
